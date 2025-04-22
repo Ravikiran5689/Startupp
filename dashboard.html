@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Green Mining</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="a-logo-design-featuring-the-text-green-m_U0rQTnxhQJShgkWDqYadEA_rBRtwK-kSlmMyqeUXw58Xg-removebg-preview.png" alt="Logo">
+                <h3>Green Mine</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="rewards.html"><i class="fas fa-gift"></i> Rewards</a></li>
+                    <li><a href="#"><i class="fas fa-history"></i> Recycling History</a></li>
+                    <li><a href="#"><i class="fas fa-wallet"></i> Wallet</a></li>
+                    <li><a href="blog.html"><i class="fas fa-book"></i> Education</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="images/user-avatar.png" alt="User Avatar">
+                    <div>
+                        <h4>John Doe</h4>
+                        <p>Premium Member</p>
+                    </div>
+                </div>
+                <a href="login.html" class="btn btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1>Dashboard</h1>
+                <div class="header-actions">
+                    <div class="notification">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="qr-code">
+                        <i class="fas fa-qrcode"></i>
+                        <span>My QR Code</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- Balance Card -->
+                <div class="card balance-card">
+                    <h2>Your GreenCoin Balance</h2>
+                    <div class="balance-amount">
+                        <span class="amount">1,245.75</span>
+                        <span class="currency">GNC</span>
+                    </div>
+                    <div class="balance-equivalent">
+                        ≈ $124.58 USD
+                    </div>
+                    <div class="balance-actions">
+                        <button class="btn btn-primary"><i class="fas fa-exchange-alt"></i> Transfer</button>
+                        <button class="btn btn-secondary"><i class="fas fa-gift"></i> Redeem</button>
+                    </div>
+                </div>
+
+                <!-- Recycling Stats -->
+                <div class="card stats-card">
+                    <h2>Recycling Impact</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-value">48</div>
+                            <div class="stat-label">Recycling Sessions</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">127.5</div>
+                            <div class="stat-label">Total Kg Recycled</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">3.2</div>
+                            <div class="stat-label">CO₂ Saved (kg)</div>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-label">
+                            <span>Monthly Goal</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="card activity-card">
+                    <h2>Recent Activity</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon success">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Plastic Recycling</h4>
+                                <p>2.5 kg at Smart Bin #42</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                            <div class="activity-amount success">
+                                +25 GNC
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon success">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Paper Recycling</h4>
+                                <p>1.8 kg at Smart Bin #17</p>
+                                <span class="activity-time">1 day ago</span>
+                            </div>
+                            <div class="activity-amount success">
+                                +18 GNC
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Reward Redeemed</h4>
+                                <p>$10 Amazon Gift Card</p>
+                                <span class="activity-time">3 days ago</span>
+                            </div>
+                            <div class="activity-amount danger">
+                                -100 GNC
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="view-all">View All Activity</a>
+                </div>
+
+                <!-- Smart Bin Locator -->
+                <div class="card bin-locator-card">
+                    <h2>Nearby Smart Bins</h2>
+                    <div class="map-container">
+                        <img src="images/map-placeholder.png" alt="Map">
+                        <div class="bin-marker" style="top: 30%; left: 40%">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                        <div class="bin-marker" style="top: 60%; left: 70%">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                        <div class="bin-marker" style="top: 45%; left: 25%">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                    <div class="bin-list">
+                        <div class="bin-item">
+                            <h4>Smart Bin #42</h4>
+                            <p>0.5 miles away • Accepts: Plastic, Metal</p>
+                        </div>
+                        <div class="bin-item">
+                            <h4>Smart Bin #17</h4>
+                            <p>0.8 miles away • Accepts: Paper, Plastic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Educational Tip -->
+                <div class="card tip-card">
+                    <h2>Did You Know?</h2>
+                    <div class="tip-content">
+                        <img src="images/recycling-tip.png" alt="Recycling Tip">
+                        <p>Recycling one aluminum can saves enough energy to run a TV for three hours. That's why we reward aluminum recycling with bonus tokens!</p>
+                    </div>
+                    <a href="blog.html" class="btn btn-secondary">Learn More</a>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="card actions-card">
+                    <h2>Quick Actions</h2>
+                    <div class="actions-grid">
+                        <button class="action-btn">
+                            <i class="fas fa-qrcode"></i>
+                            <span>Show My QR</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-wallet"></i>
+                            <span>Connect Wallet</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Refer Friends</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-trophy"></i>
+                            <span>Challenges</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

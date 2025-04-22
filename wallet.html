@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet - Green Mining</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wallet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="container">
+            <div class="logo">
+                <img src="a-logo-design-featuring-the-text-green-m_U0rQTnxhQJShgkWDqYadEA_rBRtwK-kSlmMyqeUXw58Xg-removebg-preview.png">
+                <h1>Green Mine</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="login.html" class="btn">Login</a></li>
+                    <li><a href="register.html" class="btn btn-primary">Register</a></li>
+                </ul>
+            </nav>
+            </div>
+           
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="images/user-avatar.png" alt="User Avatar">
+                    <div>
+                        <h4>John Doe</h4>
+                        <p>Premium Member</p>
+                    </div>
+                </div>
+                <a href="login.html" class="btn btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+       
+            </header>
+
+            <div class="wallet-container">
+                <!-- Wallet Overview -->
+                <div class="wallet-overview">
+                    <div class="wallet-balance">
+                        <h2>Your Balance</h2>
+                        <div class="balance-amount">
+                            <span class="amount">0</span>
+                            <span class="currency">GNC</span>
+                        </div>
+                        <div class="balance-equivalent">
+                            ≈ 0USD
+                        </div>
+                    </div>
+                    <div class="wallet-actions">
+                        <button class="btn btn-primary"><i class="fas fa-arrow-up"></i> Send</button>
+                        <button class="btn btn-primary"><i class="fas fa-arrow-down"></i> Receive</button>
+                        <button class="btn btn-secondary"><i class="fas fa-exchange-alt"></i> Swap</button>
+                    </div>
+                </div>
+
+                <!-- Wallet Address -->
+                <div class="wallet-address-card">
+                    <div class="address-header">
+                        <h3><i class="fas fa-wallet"></i> Wallet Address</h3>
+                        <button class="btn-icon"><i class="fas fa-copy"></i></button>
+                    </div>
+                    <div class="address-value">
+                        0x71C7656EC7ab88b098defB751B7401B5f6d8976F
+                    </div>
+                    <div class="qr-code-container">
+                        <img src="images/qr-code.png" alt="Wallet QR Code">
+                    </div>
+                </div>
+
+                <!-- Connected Wallets -->
+                <div class="connected-wallets">
+                    <h2>Connected Wallets</h2>
+                    <div class="wallets-grid">
+                        <div class="wallet-card">
+                            <div class="wallet-icon">
+                                <img src="images/metamask.png" alt="MetaMask">
+                            </div>
+                            <div class="wallet-info">
+                                <h3>MetaMask</h3>
+                                <p>Connected</p>
+                            </div>
+                            <button class="btn-icon danger"><i class="fas fa-unlink"></i></button>
+                        </div>
+                        <div class="wallet-card">
+                            <div class="wallet-icon">
+                                <img src="images/trust-wallet.png" alt="Trust Wallet">
+                            </div>
+                            <div class="wallet-info">
+                                <h3>Trust Wallet</h3>
+                                <p>Not connected</p>
+                            </div>
+                            <button class="btn btn-outline">Connect</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transaction History -->
+                <div class="transaction-history">
+                    <div class="section-header">
+                        <h2>Transaction History</h2>
+                        <div class="history-filters">
+                            <select class="filter-select">
+                                <option>All Transactions</option>
+                                <option>Received</option>
+                                <option>Sent</option>
+                                <option>Rewards</option>
+                            </select>
+                            <button class="btn-icon"><i class="fas fa-download"></i> Export</button>
+                        </div>
+                    </div>
+                    <div class="transactions-list">
+                        <div class="transaction-item">
+                            <div class="transaction-icon success">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <h4>Received from Smart Bin #42</h4>
+                                <p>Recycling reward</p>
+                                <span class="transaction-date">Today, 14:30</span>
+                            </div>
+                            <div class="transaction-amount success">
+                                0 GNC
+                            </div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon">
+                                <i class="fas fa-arrow-up"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <h4>Sent to 0x89205...3a4b</h4>
+                                <p>Token transfer</p>
+                                <span class="transaction-date">Yesterday, 09:15</span>
+                            </div>
+                            <div class="transaction-amount">
+                                0 GNC
+                            </div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon success">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <h4>Received from Smart Bin #17</h4>
+                                <p>Recycling reward</p>
+                                <span class="transaction-date">Jun 14, 2023</span>
+                            </div>
+                            <div class="transaction-amount success">
+                                 0 GNC
+                            </div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <h4>Reward redemption</h4>
+                                <p>Amazon Gift Card</p>
+                                <span class="transaction-date">Jun 12, 2023</span>
+                            </div>
+                            <div class="transaction-amount">
+                                0 GNC
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="view-all">View All Transactions</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/wallet.js"></script>
+</body>
+</html>
